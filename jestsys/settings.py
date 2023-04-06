@@ -52,6 +52,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'jestsys.urls'
 
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR/ "staticfiles_build"/ "static"
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
