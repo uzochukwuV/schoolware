@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Lite</title>
+    <style>
+        *, html, body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: honeydew;
+        }
+        .navBar {
+            display: flex;
+            color: rgb(255, 255, 255);
+            background-color: #7897ff;
+            font-size:  16px;
+            transition: 1s font-size;
+        }
+        .logo {
+            padding: 1.25em;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .navBar:hover {
+            
+            z-index: 1;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+
+            display: flex;
+            flex-grow: 1;
+            width: 100px;
+            max-width: 600px;
+            height: auto;
+            padding: 3.5rem;
+            gap: 25px;
+            
+        }
+        .input {
+            padding: .75em;
+            border-radius: 12px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid gray;
+            display: block;
+            width: 100%;
+            height: 100px;
+        }
+       
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        
+        .clasic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="navBar">
+                <div class="logo">
+                    <h1>SCHOOL MANAGEMENT SOFTWARE</h1>
+                </div>
+                <div class="menu"></div>
+            </div>
+            
+        </nav>
+        <main>
+            <div class="clasic">
+                <div class="container">
+                    <form action="" class="form">
+                        <input type="text" name="username" id="name" class="input"/>
+                        <input type="password" name="password" id="pin" class="input">
+                        <input type="button" value="submit" class="input">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
